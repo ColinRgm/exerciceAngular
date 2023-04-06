@@ -1,0 +1,55 @@
+/* ----------------------------------------------------- NavBar ----------------------------------------------------- */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    background-color: #DADADA;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-item {
+    padding: 10px 20px;
+    color: #453F3C;
+    margin: 0 20px;
+    position: relative;
+    width: 130px;
+    text-align: center;
+}
+
+.nav-item:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    background-color: transparent;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    transition: .3s;
+    color: transparent;
+}
+
+.nav-item:not(.is-active):hover:before {
+    bottom: 0;
+    background-color: rgba(252, 122, 30, 0.3);
+}
+
+.nav-indicator {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    transition: .4s;
+}
+
+
+.is-active strong {
+    font-size: 22px;
+    color: #FC7A1E;
+}
